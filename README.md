@@ -113,4 +113,5 @@ Coming soon...
 - [Font Awesome 6](https://fontawesome.com/) — Icons (courses page)
 
 ---
-
+## 📞 Contact
+Feel free to reach out via GitHub!
