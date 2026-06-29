@@ -103,7 +103,8 @@ Double-click index.html → Opens in browser
 Or with VS Code: Right-click `index.html` → **Open with Live Server**
 
 ---
-
+## 🌟 Live Demo
+Coming soon...
 ## Built With
 
 - HTML5
@@ -112,6 +113,17 @@ Or with VS Code: Right-click `index.html` → **Open with Live Server**
 - [Font Awesome 6](https://fontawesome.com/) — Icons (courses page)
 
 ---
+## 📞 Contact
+Feel free to reach out via GitHub!
 
+ pull-shark-1
 *Atlas University — Empowering Future Leaders Through Knowledge*
+ pull-shark-2
 ..
+
+.
+..
+## 🎯 Goals
+To become a professional web developer!
+ master
+master
