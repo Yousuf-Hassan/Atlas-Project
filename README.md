@@ -115,3 +115,6 @@ Coming soon...
 ---
 ## 📞 Contact
 Feel free to reach out via GitHub!
+
+## 🎯 Goals
+To become a professional web developer!
