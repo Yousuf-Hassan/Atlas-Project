@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas University — Home</title>
+  <link rel="icon" type="image/png" href="assets/images/atlas-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="assets/images/atlas-logo.png" alt="Atlas University Logo">
+          <div>
+            <div class="nav-logo-text">Atlas University</div>
+            <div class="nav-logo-sub">Hargeisa · Somaliland</div>
+          </div>
+        </a>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="pages/about.html" class="nav-link">About</a></li>
+          <li><a href="pages/courses.html" class="nav-link">Courses</a></li>
+          <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+          </button>
+          <a href="pages/signup.html" class="btn-signup">Sign Up</a>
+          <a href="pages/login.html" class="btn-login">Login</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section>
+      <div class="hero">
+        <div class="hero-left">
+          <div class="hero-eyebrow">Hargeisa, Somaliland</div>
+          <h1>Higher Education<br>for a <span class="accent">Brighter Future</span></h1>
+          <p>
+            Atlas University empowers students with knowledge, skills, and values
+            to shape the future of Somalia and the world. Join a community dedicated
+            to excellence and innovation.
+          </p>
+          <div class="hero-actions">
+            <a href="pages/courses.html" class="btn-primary">
+              <i class="fas fa-graduation-cap"></i> Explore Courses
+            </a>
+            <a href="pages/about.html" class="btn-outline">
+              Learn More <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-image-wrap">
+            <img src="assets/images/campus-hero.jpg" alt="Atlas University campus">
+            <div class="hero-badge">
+              <div class="hero-badge-icon">🎓</div>
+              <div class="hero-badge-text">
+                <strong>2,300+</strong>
+                <span>Students Enrolled</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section class="vision-mission">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Direction</span>
+          <h2 class="section-title">Vision &amp; Mission</h2>
+          <p class="section-description">Guided by a clear purpose — to deliver world-class education and develop the next generation of leaders.</p>
+        </div>
+        <div class="vm-grid">
+          <div class="vm-card">
+            <div class="vm-icon blue">🔭</div>
+            <h3>Vision</h3>
+            <p>
+              To become a leading center of excellence in higher education, research, and innovation
+              that empowers students to create positive change in Somalia and beyond.
+            </p>
+          </div>
+          <div class="vm-card">
+            <div class="vm-icon green">🎯</div>
+            <h3>Mission</h3>
+            <p>
+              To provide quality education, foster critical thinking, and prepare graduates with the
+              skills, knowledge, and values necessary to contribute to the development of society
+              and the global community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2>Atlas University</h2>
+          <p>Empowering future leaders through knowledge, research, and innovation.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>info@atlasuniversity.edu.so</p>
+          <p>+252 63 723416</p>
+          <p>Hargeisa, Somaliland</p>
+        </div>
+        <div class="footer-col">
+          <h3>Pages</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="pages/about.html">About</a></p>
+          <p><a href="pages/courses.html">Courses</a></p>
+          <p><a href="pages/contact.html">Contact</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Atlas University. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', saved);
+
+    toggle.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // Mobile nav
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+  </script>
+</body>
+</html>
